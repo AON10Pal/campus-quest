@@ -1,0 +1,16 @@
+# Private/local practice files
+.env
+.env.*
+!.env.example
+private-notes.txt
+# Dependencies and generated output
+node_modules/
+dist/
+coverage/
+# Logs and OS/editor files
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+.idea/

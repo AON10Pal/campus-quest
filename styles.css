@@ -1,0 +1,35 @@
+:root {
+  --ink: #192338;
+  --paper: #f7f4ec;
+  --accent: #f7cb46;
+  --muted: #505b6d;
+  --surface: #ffffff;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.65 system-ui, sans-serif; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; }
+.container { width: min(1100px, 90%); margin-inline: auto; }
+.hero { background: var(--ink); color: white; padding-bottom: 3rem; }
+nav { display: flex; justify-content: space-between; gap: 1rem; padding-block: 1.5rem; }
+.brand { font-weight: 800; text-decoration: none; }
+.hero-copy { padding-block: 2rem; max-width: 1100px; }
+.eyebrow { font-size: .8rem; text-transform: uppercase; letter-spacing: .13em; font-weight: 750; }
+h1 { font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1.05; max-width: 850px; margin-block: 1rem; }
+h2 { font-size: 2rem; line-height: 1.2; }
+.hero-copy > p:not(.eyebrow) { max-width: 560px; color: #dce2ec; }
+.button { display: inline-block; border: 0; border-radius: .4rem; background: var(--accent); color: var(--ink); padding: .75rem 1.2rem; font-weight: 700; text-decoration: none; cursor: pointer; }
+.starter-note { margin-block: 2rem; padding: 1rem; border: 2px dashed #7b6a34; border-radius: .5rem; }
+.section-heading { margin-block: 2rem; }
+.event-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.event-card { background: var(--surface); border: 1px solid #d5d8dd; border-radius: .8rem; padding: 1.4rem; }
+.event-card h3 { margin-block: .5rem; font-size: 1.4rem; }
+.category { display: inline-block; border-radius: 1rem; background: #e4eaf5; padding: .15rem .7rem; font-size: .8rem; font-weight: 700; }
+.event-details { color: var(--muted); }
+.footer { padding-block: 3rem; color: var(--muted); }
+:focus-visible { outline: 3px solid #b44000; outline-offset: 4px; }
+.skip-link { position: absolute; left: 1rem; top: -5rem; padding: .5rem; background: white; color: var(--ink); }
+.skip-link:focus { top: 1rem; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+/* TASK: Add responsive card columns and styles for your new controls. */
