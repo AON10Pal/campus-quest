@@ -2,7 +2,7 @@
 
 **Your mission:** build a festival planner that a classmate would actually enjoy using. Discover fictional events, search for your interests, save a personal schedule, earn quest points, and propose your own activity. Finish with a website you can demonstrate and a GitHub contribution history you can explain.
 
-**Duration:** two weeks · **Pace:** ten sessions of 60–90 minutes · **Level:** high school beginner with basic HTML/CSS exposure. Allow extra time if JavaScript is new. Use the weekend for catching up, not extra required features.
+**Duration:** two weeks · **Pace:** ten sessions of 60–90 minutes · **Level:** high school intermediate with basic HTML/CSS exposure. Allow extra time if JavaScript is new. Use the weekend for catching up, not extra required features.
 
 **Original repository:** [Mishael-2584/campus-quest](https://github.com/Mishael-2584/campus-quest)
 
