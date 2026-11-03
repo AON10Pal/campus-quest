@@ -136,7 +136,7 @@ Open browser developer tools and find **Console**. Open `app.js` and locate `ren
 
 ## 6. Your two-week route
 
-Use the [numbered learning issues](https://github.com/Mishael-2584/campus-quest/issues) in order. Their titles start with **Day 01** through **Day 10**. Before starting, comment on the relevant issue saying what you plan to do. Each issue has checkable success criteria. Refer to an issue in your PR using `Closes #NUMBER`, with its actual number from GitHub.
+Use the [learning issue roadmap](docs/ROADMAP.md) to open the **Day 01** through **Day 10** issues in order. You can also see them in the [Issues tab](https://github.com/Mishael-2584/campus-quest/issues). Before starting, comment on the relevant issue saying what you plan to do. Each issue has checkable success criteria. Refer to an issue in your PR using `Closes #NUMBER`, with its actual number from GitHub.
 
 | Session | Mission | Evidence / suggested PR |
 | --- | --- | --- |
