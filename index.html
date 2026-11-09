@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Campus Quest: a fictional school festival planner built by a student.">
-  <title>Campus Quest | School Festival</title>
+  <title>A World of Traditions: Celebrating Global Cultures</title>
   <link rel="stylesheet" href="styles.css">
   <script src="js/events.js" defer></script>
   <script src="js/app.js" defer></script>
@@ -15,11 +15,13 @@
     <nav class="container" aria-label="Main navigation">
       <a class="brand" href="index.html">CQ / Campus Quest</a>
       <a href="#events">Explore events</a>
+      <a href="#schedule">My Schedule</a>
+      <a href="#proposals">Propose an Event</a>
     </nav>
     <div class="container hero-copy">
-      <p class="eyebrow">One school. Endless possibilities.</p>
-      <h1>Your festival.<br>Your adventure starts here.</h1>
-      <p>Discover a new talent, and build a day worth remembering.</p>
+      <p class="eyebrow">One World. Endless Cultures.</p>
+      <h1>A World of Traditions: Celebrating Global Cultures.</h1>
+      <p>Explore the diverse traditions celebrated around the world and appreciate the richness of every culture.</p>
       <a class="button" href="#events">Find your quest →</a>
     </div>
   </header>
@@ -34,12 +36,31 @@
         <p>All events and details are fictional. Pick something outside your comfort zone!</p>
       </div>
       <!-- TASK: Add labelled search and category controls here. -->
+       <label for="event-search">Search events</label>
+<input id="event-search" type="search">
+<label for="category-filter">Filter by category</label>
+<select id="category-filter">
+  <option value="all">All categories</option>
+  <option value="Tech">Tech</option>
+  <option value="Arts">Arts</option>
+  <option value="Sports">Sports</option>
+  <option value="Community">Community</option>
+</select>
       <p id="result-count" role="status"></p>
       <div id="event-grid" class="event-grid"></div>
       <noscript>Enable JavaScript to see the event gallery.</noscript>
     </section>
-    <!-- TASK: Add a My Schedule section with saved events and quest points. -->
-    <!-- TASK: Add a labelled event proposal form and accessible feedback. -->
+    <section id="schedule" aria-labelledby="schedule-title">
+  <h2 id="schedule-title">My Schedule</h2>
+  <p>Your saved festival events will appear here.</p>
+  <div id="schedule-list"></div>
+  <p id="schedule-points">Total quest points: 0</p>
+</section>
+    <section id="proposals" aria-labelledby="proposals-title">
+  <h2 id="proposals-title">Propose an Event</h2>
+  <p>Have an idea for our festival? Share your own cultural activity!</p>
+  <p>Our event proposal form will be available here.</p>
+</section>
   </main>
   <footer class="container footer">
     <p>Campus Quest · A fictional festival, built to learn. </p>
