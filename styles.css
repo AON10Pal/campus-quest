@@ -37,7 +37,12 @@ h2 { font-size: 2rem; line-height: 1.2; }
 }
 .event-card h3 { margin-block: .5rem; font-size: 1.4rem; }
 .category {
+  display: inline-block;
+  border-radius: 1rem;
   background: var(--category-bg);
+  padding: .15rem .7rem;
+  font-size: .8rem;
+  font-weight: 700;
 }
 .event-details { color: var(--muted); }
 .footer { padding-block: 3rem; color: var(--muted); }
