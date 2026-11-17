@@ -4,7 +4,27 @@
 // Read it before adding features. README.md explains each project milestone.
 const eventGrid = document.querySelector("#event-grid");
 const resultCount = document.querySelector("#result-count");
+const categoryFilter = document.querySelector("#category-filter");
+const eventSearch = document.querySelector("#event-search");
+function filterEvents() {
+  const searchTerm = eventSearch.value.trim().toLowerCase();
+  const selectedCategory = categoryFilter.value;
 
+  const filteredEvents = starterEvents.filter((event) => {
+    const matchesSearch =
+      event.title.toLowerCase().includes(searchTerm) ||
+      event.description.toLowerCase().includes(searchTerm);
+
+    const matchesCategory =
+      selectedCategory === "all" || event.category === selectedCategory;
+
+    return matchesSearch && matchesCategory;
+  });
+
+  renderEvents(filteredEvents);
+}
+eventSearch.addEventListener("input", filterEvents);
+categoryFilter.addEventListener("change", filterEvents);
 function createEventCard(event) {
   const card = document.createElement("article");
   card.className = "event-card";
@@ -30,6 +50,11 @@ function createEventCard(event) {
 
 function renderEvents(events) {
   eventGrid.replaceChildren();
+  if (events.length === 0) {
+  const message = document.createElement("p");
+  message.textContent = "No events found. Try changing your search or category.";
+  eventGrid.append(message);
+}
   events.forEach((event) => eventGrid.append(createEventCard(event)));
   resultCount.textContent = `${events.length} events to explore`;
   // TASK: Provide a helpful empty state when events.length is zero.
